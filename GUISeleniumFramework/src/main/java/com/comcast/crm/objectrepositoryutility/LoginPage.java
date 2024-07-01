@@ -1,6 +1,7 @@
 package com.comcast.crm.objectrepositoryutility;
 
 import java.time.Duration;
+import java.util.Set;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -16,31 +17,31 @@ import com.comcast.crm.generic.webdriverutility.WebDriverUtility;
  * Contains Login page elements & business lib like login()
  *
  */  
-public class LoginPage extends WebDriverUtility{                              // Rule-1  create a separte java class
+public class LoginPage extends WebDriverUtility{                              
                            
 	WebDriver driver;
-	 public LoginPage(WebDriver driver) {             //Rule 3 : Object Initialization
+	 public LoginPage(WebDriver driver) {             
 		 this.driver = driver;
 		 PageFactory.initElements(driver, this);
 	 }
 	                           
-	@FindBy(name="user_name")                        // Rule-2 Object Creation
-	private WebElement usernameEdt;
+	@FindBy(name="username")                        
+	private WebElement usernameTextFeild;
 	
-	@FindBy(name="user_password")
-	private WebElement passwordEdt;
+	@FindBy(name="password")
+	private WebElement passwordTextFeild;
 	
-	@FindBy(id = "submitButton")
+	@FindBy(xpath = "//button[@name='submit']")
 	private WebElement loginBtn;
 	     
 	
 	                                             
-	public WebElement getUsernameEdt() {            //Rule-4 : Object Encapsulation
-		return usernameEdt;                        //Rule-5 : Object Utilization
+	public WebElement getusernameTextFeild() {            
+		return usernameTextFeild;                       
 	}
 
-	public WebElement getPasswordEdt() {
-		return passwordEdt;
+	public WebElement getpasswordTextFeild() {
+		return passwordTextFeild;
 	}
 
 	public WebElement getLoginBtn() {
@@ -53,14 +54,58 @@ public class LoginPage extends WebDriverUtility{                              //
  * @param username
  * @param password
  */
-	 public void loginToapp(String url , String username , String password) {
+	 public void loginToAdmin(WebDriver driver , String username , String password) {
 		 waitForPageToLoad(driver);
-		 driver.get(url);	
-		// driver.manage().window().maximize();
-		 usernameEdt.sendKeys(username);
-		 passwordEdt.sendKeys(password);
-		 loginBtn.click();
+		 
+		 Set<String> allIds = driver.getWindowHandles();
+		 
+		 for(String id : allIds) {
+			 driver.switchTo().window(id);
+			 
+			 if(driver.getTitle().contains("Admin")) {
+				 break;
+			 }
+		 }
+		 
+		 getusernameTextFeild().sendKeys(username);
+		 getpasswordTextFeild().sendKeys(password);
+		 getLoginBtn().click(); 
 	 }
-	
-	
+	 
+	 public void loginToDoctor(WebDriver driver , String username , String password) throws InterruptedException {
+		 waitForPageToLoad(driver);
+		 
+		 Set<String> allIds = driver.getWindowHandles();
+		 
+		 for(String id : allIds) {
+			 driver.switchTo().window(id);
+			 
+			 if(driver.getTitle().contains("Doctor")) {
+				 break;
+			 }
+		 }
+		 
+		 getusernameTextFeild().sendKeys(username);
+		 getpasswordTextFeild().sendKeys(password);
+		
+		 getLoginBtn().click();
+	 }
+	 
+	 public void loginToPatient(WebDriver driver , String username , String password) throws InterruptedException {
+		 waitForPageToLoad(driver);
+		 
+		 Set<String> allIds = driver.getWindowHandles();
+		 
+		 for(String id : allIds) {
+			 driver.switchTo().window(id);
+			 
+			 if(driver.getTitle().contains("User")) {
+				 break;
+			 }
+		 }
+		 
+		 getusernameTextFeild().sendKeys(username);
+		 getpasswordTextFeild().sendKeys(password);
+		 getLoginBtn().click();
+	 }
 }

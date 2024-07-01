@@ -26,13 +26,14 @@ import com.comcast.crm.objectrepositoryutility.LoginPage;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class BaseClass {
+public class DoctorBaseClass {
 	/* Create Object */
 	public DataBaseUtility dbLib = new DataBaseUtility();
 	public FileUtility fLib = new FileUtility();
 	public ExcelUtility eLib = new ExcelUtility();
 	public JavaUtility jLib = new JavaUtility();
 	public  WebDriver driver = null;
+	public Home hp;
 	public  static WebDriver sdriver = null;
 
 
@@ -74,16 +75,20 @@ public class BaseClass {
 		}
 		sdriver = driver;
 		UtilityClassObject.setDriver(driver);
+		driver.manage().window().maximize();
+		driver.get(System.getProperty("url" ,fLib.getDataFromPropertiesFile("url")));
+		
 	    }
 	    
 	    @BeforeMethod(groups = {"smokeTest", "regressionTest"})
 		public void configBM() throws Throwable {
 			System.out.println("=login=");
-			String URL = System.getProperty("url" ,fLib.getDataFromPropertiesFile("url") );
-			String USERNAME = System.getProperty("username" , fLib.getDataFromPropertiesFile("username"));
-			String PASSWORD = System.getProperty("password" , fLib.getDataFromPropertiesFile("password"));
+			String USERNAME = System.getProperty("Doctorusername" , fLib.getDataFromPropertiesFile("Doctorusername"));
+			String PASSWORD = System.getProperty("Doctorpassword" , fLib.getDataFromPropertiesFile("Doctorpassword"));
+			hp = new Home(driver);
+			hp.getDoctorLoginClickHereButton().click();
 			LoginPage lp = new LoginPage(driver);
-			lp.loginToapp(URL, USERNAME, PASSWORD);
+			lp.loginToDoctor(driver, USERNAME, PASSWORD);
 		}
 	    
 	    
@@ -91,7 +96,8 @@ public class BaseClass {
 		public void configAM() {
 			System.out.println("=logout=");
 			Home hp = new Home(driver);
-			hp.logout();
+			hp.getAdminAccount().click();
+			hp.getLogoutLink().click();
 		}
 		
 	    
@@ -107,10 +113,4 @@ public class BaseClass {
 			dbLib.closeDbconnection();
 			
 		}
-	  
-	
-	   
-	    
-
-
 }

@@ -19,7 +19,7 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
-import com.comcast.crm.generic.basetest.BaseClass;
+import com.comcast.crm.generic.basetest.DoctorBaseClass;
 import com.comcast.crm.generic.webdriverutility.UtilityClassObject;
 import com.mysql.cj.x.protobuf.MysqlxResultset.FetchSuspendedOrBuilder;
 
@@ -67,7 +67,7 @@ public class ListImpClass implements ITestListener , ISuiteListener{
 
 	public void onTestFailure(ITestResult result) {
 		String testNAme = result.getMethod().getMethodName();		
-		TakesScreenshot eDriver = (TakesScreenshot) BaseClass.sdriver;
+		TakesScreenshot eDriver = (TakesScreenshot) DoctorBaseClass.sdriver;
 		String filePath = eDriver.getScreenshotAs(OutputType.BASE64);
 		
 	    String time = 	new Date().toString().replace(" ", "_").replace(":", "_");
