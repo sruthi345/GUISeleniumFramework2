@@ -16,6 +16,9 @@ public class PatientCreateAnAccount {
 	@FindBy(xpath = "//label[@for='rg-male']")
 	private WebElement MaleRadioBtn;
 	
+	@FindBy(xpath = "//label[@for='rg-female']")
+	private WebElement FemaleRadioBtn;
+	
 	public WebElement getMaleRadioBtn() {
 		return MaleRadioBtn;
 	}
@@ -64,5 +67,35 @@ public class PatientCreateAnAccount {
 	public WebElement getSubmitBtn() {
 		return SubmitBtn;
 	}
+	/**
+	 * BusinessLogic for creating patient account
+	 * 
+	 * @param fullNameTxt
+	 * @param address
+	 * @param city
+	 * @param email
+	 * @param password
+	 * @param confirmPassword
+	 */
+	public void addPatientUserM(String fullNameTxt,String address, String city, String email, String password, String confirmPassword) {
+		FullNameTxt.sendKeys(fullNameTxt);
+		AddressTxt.sendKeys(address);
+		cityTxt.sendKeys(city);
+		FemaleRadioBtn.click();
+		emailTxt.sendKeys(email);
+		passwordTxt.sendKeys(password);
+		PwdAgainTxt.sendKeys(confirmPassword);
+		SubmitBtn.click();
+	}
 	
+	public void addPatientUserF(String fullNameTxt,String address, String city, String email, String password, String confirmPassword) {
+		FullNameTxt.sendKeys(fullNameTxt);
+		AddressTxt.sendKeys(address);
+		cityTxt.sendKeys(city);
+		FemaleRadioBtn.click();
+		emailTxt.sendKeys(email);
+		passwordTxt.sendKeys(password);
+		PwdAgainTxt.sendKeys(confirmPassword);
+		SubmitBtn.click();
+	}
 }
