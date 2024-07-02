@@ -15,5 +15,13 @@ public class AdminPageAboutUs {
 	
 	@FindBy(xpath = "//button[@type='submit']")
 	private WebElement submitBtn;
+
+	public WebElement getPageDescription_Txt() {
+		return PageDescription_Txt;
+	}
+
+	public WebElement getSubmitBtn() {
+		return submitBtn;
+	}
 	
 }

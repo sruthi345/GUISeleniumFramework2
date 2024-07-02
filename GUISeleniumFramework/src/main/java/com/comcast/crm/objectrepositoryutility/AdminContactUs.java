@@ -20,6 +20,26 @@ public class AdminContactUs {
 	@FindBy(xpath = "//input[@name='email']")
 	private WebElement email_Txt;
 	
+	public WebElement getPageTitle() {
+		return pageTitle;
+	}
+
+	public WebElement getPageDescpinCntctUs_Txt() {
+		return PageDescpinCntctUs_Txt;
+	}
+
+	public WebElement getEmail_Txt() {
+		return email_Txt;
+	}
+
+	public WebElement getContactNo() {
+		return contactNo;
+	}
+
+	public WebElement getSubmitBtn() {
+		return submitBtn;
+	}
+
 	@FindBy(xpath = "//input[@name='mobnum']")
 	private WebElement contactNo;
 	

@@ -5,15 +5,51 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LeftPanel {
+public class LeftPanelMainNavigation {
 
-	public LeftPanel(WebDriver driver) {
+	public LeftPanelMainNavigation(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
 	
 	@FindBy(xpath = "//span[text()=' Patients ']")
 	private WebElement patient;
 	
+	public WebElement getPatient() {
+		return patient;
+	}
+
+	public WebElement getManageptnt() {
+		return manageptnt;
+	}
+
+	public WebElement getAppointmntHstry() {
+		return appointmntHstry;
+	}
+
+	public WebElement getContctedQueries() {
+		return ContctedQueries;
+	}
+
+	public WebElement getUnrdQuers() {
+		return unrdQuers;
+	}
+
+	public WebElement getReadQuers() {
+		return ReadQuers;
+	}
+
+	public WebElement getBtwReprts() {
+		return BtwReprts;
+	}
+
+	public WebElement getReports() {
+		return reports;
+	}
+
+	public WebElement getPages() {
+		return pages;
+	}
+
 	@FindBy(xpath = "//span[text()=' Manage Patients ']")
 	private WebElement manageptnt;
 	

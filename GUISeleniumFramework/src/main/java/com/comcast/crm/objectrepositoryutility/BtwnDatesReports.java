@@ -18,4 +18,16 @@ public class BtwnDatesReports {
 	
 	@FindBy(xpath = "//button[@name=\"submit\"]")
 	private WebElement submitBtn;
+
+	public WebElement getFromdate() {
+		return fromdate;
+	}
+
+	public WebElement getTodate() {
+		return todate;
+	}
+
+	public WebElement getSubmitBtn() {
+		return submitBtn;
+	}
 }
