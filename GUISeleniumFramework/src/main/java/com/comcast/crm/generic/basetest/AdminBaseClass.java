@@ -21,6 +21,7 @@ import com.comcast.crm.generic.fileutility.ExcelUtility;
 import com.comcast.crm.generic.fileutility.FileUtility;
 import com.comcast.crm.generic.webdriverutility.JavaUtility;
 import com.comcast.crm.generic.webdriverutility.UtilityClassObject;
+import com.comcast.crm.generic.webdriverutility.WebDriverUtility;
 import com.comcast.crm.objectrepositoryutility.Home;
 import com.comcast.crm.objectrepositoryutility.LoginPage;
 
@@ -32,6 +33,7 @@ public class AdminBaseClass {
 	public FileUtility fLib = new FileUtility();
 	public ExcelUtility eLib = new ExcelUtility();
 	public JavaUtility jLib = new JavaUtility();
+	public WebDriverUtility wLib=new WebDriverUtility();
 	public  WebDriver driver = null;
 	public Home hp;
 	public  static WebDriver sdriver = null;

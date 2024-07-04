@@ -5,6 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -91,10 +92,17 @@ public class BookAppointment {
 	 public void BookAppointment(String doctorSpecilization,String doctor)
 	 {
 		 BookAppointmentlink.click();
+		 System.out.println("book");
 		 Doctorspecializationdropdown.sendKeys(doctorSpecilization);
 		 Doctordropdown.sendKeys(doctor);
 		 datetextfield.sendKeys(date);
-		apptime.sendKeys(currentTime);
+		 apptime.sendKeys(currentTime);
 		 submitBtn.click(); 
+	 }
+	 public void verifyBookAppointment(String patName) throws InterruptedException {
+		 System.out.println("=====");
+		 driver.findElement(By.xpath("//td[text()='"+patName+"']/..//td[contains(text(),'"+date+"')]"));
+		
+		
 	 }
 }

@@ -53,5 +53,18 @@ public class AddMedicalHistoryPage {
 		return submitBtn;
 	}
 	
+	public void addingMedicalHis(String bloodPressure,String bloodSugar, String Weight, String bodyTemp, String prescription) {
+		bpTxt.click();
+		bpTxt.sendKeys(bloodPressure);
+		bloodSugarTxt.click();
+		bloodSugarTxt.sendKeys(bloodSugar);
+		weightTxt.click();
+		weightTxt.sendKeys(Weight);
+		bodyTempTxt.click();
+		bodyTempTxt.sendKeys(bodyTemp);
+		prescriptionTxt.click();
+		prescriptionTxt.sendKeys(prescription);
+		
+	}
 	
 }
