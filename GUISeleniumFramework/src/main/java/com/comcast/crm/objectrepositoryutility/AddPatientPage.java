@@ -1,11 +1,16 @@
 package com.comcast.crm.objectrepositoryutility;
 
+import static org.testng.Assert.assertEquals;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.asserts.SoftAssert;
 
 import com.comcast.crm.generic.basetest.DoctorBaseClass;
+import com.comcast.crm.generic.fileutility.ExcelUtility;
 import com.comcast.crm.generic.webdriverutility.WebDriverUtility;
 
 /**
@@ -16,15 +21,15 @@ import com.comcast.crm.generic.webdriverutility.WebDriverUtility;
  *
  */  	
 
-public class AddPatientPage extends WebDriverUtility{
+public class AddPatientPage {
 	 WebDriverUtility wbD=new WebDriverUtility();
 	 WebDriver driver=null;
-	 
+	 ExcelUtility excellib=new ExcelUtility();
 	public AddPatientPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(name = "patname")
+	@FindBy(xpath = "//input[@name='patname']")
 	private WebElement enterPatientNameTxt;
 	
 	@FindBy(name = "patcontact")
@@ -33,10 +38,10 @@ public class AddPatientPage extends WebDriverUtility{
 	@FindBy(id = "patemail")
 	private WebElement patientEmailTxt;
 	
-	@FindBy(id = "rg-female")
+	@FindBy(id = "//label[@for='rg-female']")
 	private WebElement genderFemaleRadioBtn;
 	
-	@FindBy(id = "rg-male")
+	@FindBy(xpath = "//label[@for='rg-male']")
 	private WebElement genderMaleRadioBtn;
 	
 	@FindBy(name = "pataddress")
@@ -50,6 +55,19 @@ public class AddPatientPage extends WebDriverUtility{
 	
 	@FindBy(id = "submit")
 	private WebElement addBtn;
+	
+	@FindBy(xpath = "//span[text()=' Patients ']")
+	private WebElement patientsDropdown;
+	
+	@FindBy(xpath =" //span[text()=' Add Patient']" )
+	private WebElement addPatMod;
+	
+	@FindBy(xpath ="//span[text()=' Manage Patient ']" )
+	private WebElement managePat;
+	
+	public WebElement getManagePat() {
+		return managePat;
+	}
 
 	public WebElement getEnterPatientNameTxt() {
 		return enterPatientNameTxt;
@@ -87,9 +105,25 @@ public class AddPatientPage extends WebDriverUtility{
 		return addBtn;
 	}
 	
+	public WebDriverUtility getWbD() {
+		return wbD;
+	}
+
+	public WebDriver getDriver() {
+		return driver;
+	}
+
+	public WebElement getPatientsDropdown() {
+		return patientsDropdown;
+	}
+
+	public WebElement getAddPatMod() {
+		return addPatMod;
+	}
+
 	/**
 	 * 
-	 * Adding patients by help of this credentials
+	 * Adding patients by help of this credentials(Male)
 	 * @param patName
 	 * @param PatContactNo
 	 * @param patEmail
@@ -100,7 +134,8 @@ public class AddPatientPage extends WebDriverUtility{
 	 */
 	
 	public void addMalePatients(String patName,String PatContactNo, String patEmail, String patAddress, String patAge, String medicalHistory) {
-		wbD.waitForElementPresent(driver,enterPatientNameTxt );
+		patientsDropdown.click();
+		addPatMod.click();
 		enterPatientNameTxt.sendKeys(patName);
 		patientContactNoTxt.sendKeys(PatContactNo);
 		patientEmailTxt.sendKeys(patEmail);
@@ -110,9 +145,19 @@ public class AddPatientPage extends WebDriverUtility{
 		medicalHistoryTxt.sendKeys(medicalHistory);
 		addBtn.click();
 	}
-
+	/**
+	 * 
+	 * Adding patients by help of this credentials(Female)
+	 * @param patName
+	 * @param PatContactNo
+	 * @param patEmail
+	 * @param patAddress
+	 * @param patAge
+	 * @param medicalHistory
+	 */
 	public void addFemalePatients(String patName,String PatContactNo, String patEmail, String patAddress, String patAge, String medicalHistory) {
-		wbD.waitForElementPresent(driver,enterPatientNameTxt);
+		patientsDropdown.click();
+		addPatMod.click();
 		enterPatientNameTxt.sendKeys(patName);
 		patientContactNoTxt.sendKeys(PatContactNo);
 		patientEmailTxt.sendKeys(patEmail);
