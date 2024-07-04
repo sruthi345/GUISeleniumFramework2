@@ -1,11 +1,9 @@
 package com.comcast.crm.objectrepositoryutility;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
 
 import com.comcast.crm.generic.webdriverutility.WebDriverUtility;
 
@@ -18,7 +16,7 @@ import com.comcast.crm.generic.webdriverutility.WebDriverUtility;
  */  
 public class Search_ManagePatientPage extends WebDriverUtility {
 	
-	
+
 	public Search_ManagePatientPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
@@ -50,10 +48,5 @@ public class Search_ManagePatientPage extends WebDriverUtility {
 	
 	public void searchByMobileNo(String patMobileNO) {
 		searchByMobileNo.sendKeys(patMobileNO);
-	}
-
-	public void verifyAfterSearch(WebDriver driver,String patName) {
-		boolean status = driver.findElement(By.xpath("//td[text()='"+patName+"']")).isDisplayed();
-		Assert.assertTrue(status);
 	}
 }
