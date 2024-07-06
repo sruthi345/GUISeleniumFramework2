@@ -32,6 +32,16 @@ public class ExcelUtility {
 	    wb.close();
 		return data;
 	}
+	
+	
+	public String getDataFromExceladmin1(String sheetName , int rowNum , int celNum) throws Throwable {
+		
+		FileInputStream fis = new FileInputStream("./testdata/admin1testScriptdata.xlsx");
+		Workbook wb =  WorkbookFactory.create(fis);
+	    String data = wb.getSheet(sheetName).getRow(rowNum).getCell(celNum).getStringCellValue();
+	    wb.close();
+		return data;
+	}
 	/**
 	 * get the used row count based on sheet name
 	 * @param sheetName

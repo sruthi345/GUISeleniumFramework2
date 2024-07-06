@@ -32,10 +32,17 @@ public class Admin1_Edit_Doctor_page {
 		return DoctorUpdateBtn;
 	}
 
+	/**
+	 * this method is used to edit doctor details(fees and phone number)
+	 * 
+	 * @param fees
+	 * @param ph_no
+	 */
 
 	public void editDoctor(String fees,String ph_no ) {
-		
+		DoctorfeesTxt.clear();
 		DoctorfeesTxt.sendKeys(fees);
+		DoctorcontactTxt.clear();
 		DoctorcontactTxt.sendKeys(ph_no);
 		DoctorUpdateBtn.click();
 	}
