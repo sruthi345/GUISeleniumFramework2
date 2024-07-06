@@ -1,41 +1,339 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="2" total="7" passed="5" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[==Add paitient==]]>
+    </line>
+    <line>
+      <![CDATA[==Adding Doctor page is displayed==]]>
+    </line>
+    <line>
+      <![CDATA[----Doctor created-----]]>
+    </line>
+    <line>
+      <![CDATA[==Manage  Doctor page is displayed==]]>
+    </line>
+    <line>
+      <![CDATA[=Admin logged out successfully=]]>
+    </line>
+    <line>
+      <![CDATA[=Doctor able to login=]]>
+    </line>
+    <line>
+      <![CDATA[=AddPatient page is displayed=]]>
+    </line>
+    <line>
+      <![CDATA[=Patient added successfully=]]>
+    </line>
+    <line>
+      <![CDATA[=AddPatient page is displayed=]]>
+    </line>
+    <line>
+      <![CDATA[=Doctor logged out successfully=]]>
+    </line>
+    <line>
+      <![CDATA[==admin dashboard page is displayed==]]>
+    </line>
+    <line>
+      <![CDATA[==paitent details page is displayed==]]>
+    </line>
+    <line>
+      <![CDATA[--patient details displayed---]]>
+    </line>
+    <line>
+      <![CDATA[==Deleting User==]]>
+    </line>
+    <line>
+      <![CDATA[=Admin logged out successfully=]]>
+    </line>
+    <line>
+      <![CDATA[=Login page is displayed=]]>
+    </line>
+    <line>
+      <![CDATA[=user createded successfully=]]>
+    </line>
+    <line>
+      <![CDATA[=Login page is displayed=]]>
+    </line>
+    <line>
+      <![CDATA[==admin dashboard page is displayed==]]>
+    </line>
+    <line>
+      <![CDATA[==User details page is displayed==]]>
+    </line>
+    <line>
+      <![CDATA[--completed---]]>
+    </line>
+    <line>
+      <![CDATA[==Adding Doctor==]]>
+    </line>
+    <line>
+      <![CDATA[==Adding Doctor page is displayed==]]>
+    </line>
+    <line>
+      <![CDATA[----Doctor created-----]]>
+    </line>
+    <line>
+      <![CDATA[==Manage  Doctor page is displayed==]]>
+    </line>
+    <line>
+      <![CDATA[=Admin logged out successfully=]]>
+    </line>
+    <line>
+      <![CDATA[=Doctor able to login=]]>
+    </line>
+    <line>
+      <![CDATA[=Doctor logged out successfully=]]>
+    </line>
+    <line>
+      <![CDATA[==deleting Doctor details==]]>
+    </line>
+    <line>
+      <![CDATA[==Adding Doctor page is displayed==]]>
+    </line>
+    <line>
+      <![CDATA[----Doctor created-----]]>
+    </line>
+    <line>
+      <![CDATA[==Manage  Doctor page is displayed==]]>
+    </line>
+    <line>
+      <![CDATA[==Doctor deleted successfully==]]>
+    </line>
+    <line>
+      <![CDATA[==Editinging Doctor details==]]>
+    </line>
+    <line>
+      <![CDATA[==Adding Doctor page is displayed==]]>
+    </line>
+    <line>
+      <![CDATA[----Doctor created-----]]>
+    </line>
+    <line>
+      <![CDATA[==Manage  Doctor page is displayed==]]>
+    </line>
+    <line>
+      <![CDATA[==Edit Doctor Details page is displayed==]]>
+    </line>
+    <line>
+      <![CDATA[editing of fees successfully]]>
+    </line>
+    <line>
+      <![CDATA[editing of ph_no successfully]]>
+    </line>
   </reporter-output>
-  <suite started-at="2024-07-02T05:58:10Z" name="Default suite" finished-at="2024-07-02T05:58:17Z" duration-ms="6703">
+  <suite started-at="2024-07-06T07:41:18Z" name="Suite" finished-at="2024-07-06T07:45:01Z" duration-ms="223134">
     <groups>
     </groups>
-    <test started-at="2024-07-02T05:58:10Z" name="Default test" finished-at="2024-07-02T05:58:17Z" duration-ms="6703">
-      <class name="com.comcast.crm.admin_test.Patient">
-        <test-method is-config="true" signature="configBS()[pri:0, instance:com.comcast.crm.admin_test.Patient@66c61024]" started-at="2024-07-02T05:58:10Z" name="configBS" finished-at="2024-07-02T05:58:10Z" duration-ms="76" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configBS -->
-        <test-method is-config="true" signature="configBC()[pri:0, instance:com.comcast.crm.admin_test.Patient@66c61024]" started-at="2024-07-02T05:58:10Z" name="configBC" finished-at="2024-07-02T05:58:14Z" duration-ms="3972" status="PASS">
+    <test started-at="2024-07-06T07:41:18Z" name="Test" finished-at="2024-07-06T07:45:01Z" duration-ms="223134">
+      <class name="com.comcase.crm.Admin1.Admin1_Doctor_Test">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.comcase.crm.Admin1.Admin1_Doctor_Test@1c33c17b]" started-at="2024-07-06T07:43:11Z" name="configBC" finished-at="2024-07-06T07:43:26Z" duration-ms="14981" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.comcast.crm.admin_test.Patient@66c61024]" started-at="2024-07-02T05:58:14Z" name="configBM" finished-at="2024-07-02T05:58:16Z" duration-ms="1690" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.comcase.crm.Admin1.Admin1_Doctor_Test@1c33c17b]" started-at="2024-07-06T07:43:26Z" name="configBM" finished-at="2024-07-06T07:43:43Z" duration-ms="17457" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="AddPatient()[pri:0, instance:com.comcast.crm.admin_test.Patient@66c61024]" started-at="2024-07-02T05:58:16Z" name="AddPatient" finished-at="2024-07-02T05:58:16Z" duration-ms="9" status="PASS">
+        <test-method signature="addDoctor()[pri:0, instance:com.comcase.crm.Admin1.Admin1_Doctor_Test@1c33c17b]" started-at="2024-07-06T07:43:43Z" name="addDoctor" finished-at="2024-07-06T07:44:03Z" duration-ms="19870" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[==Adding Doctor==]]>
+            </line>
+            <line>
+              <![CDATA[==Adding Doctor page is displayed==]]>
+            </line>
+            <line>
+              <![CDATA[----Doctor created-----]]>
+            </line>
+            <line>
+              <![CDATA[==Manage  Doctor page is displayed==]]>
+            </line>
+            <line>
+              <![CDATA[=Admin logged out successfully=]]>
+            </line>
+            <line>
+              <![CDATA[=Doctor able to login=]]>
+            </line>
+            <line>
+              <![CDATA[=Doctor logged out successfully=]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- AddPatient -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:com.comcast.crm.admin_test.Patient@66c61024]" started-at="2024-07-02T05:58:16Z" name="configAM" finished-at="2024-07-02T05:58:17Z" duration-ms="476" status="PASS">
+        </test-method> <!-- addDoctor -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.comcase.crm.Admin1.Admin1_Doctor_Test@1c33c17b]" started-at="2024-07-06T07:44:03Z" name="configAM" finished-at="2024-07-06T07:44:05Z" duration-ms="1845" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:com.comcast.crm.admin_test.Patient@66c61024]" started-at="2024-07-02T05:58:17Z" name="configAC" finished-at="2024-07-02T05:58:17Z" duration-ms="520" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.comcase.crm.Admin1.Admin1_Doctor_Test@1c33c17b]" started-at="2024-07-06T07:44:05Z" name="configBM" finished-at="2024-07-06T07:44:08Z" duration-ms="3560" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="deleteDoctor()[pri:0, instance:com.comcase.crm.Admin1.Admin1_Doctor_Test@1c33c17b]" started-at="2024-07-06T07:44:08Z" name="deleteDoctor" finished-at="2024-07-06T07:44:25Z" duration-ms="16761" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[==deleting Doctor details==]]>
+            </line>
+            <line>
+              <![CDATA[==Adding Doctor page is displayed==]]>
+            </line>
+            <line>
+              <![CDATA[----Doctor created-----]]>
+            </line>
+            <line>
+              <![CDATA[==Manage  Doctor page is displayed==]]>
+            </line>
+            <line>
+              <![CDATA[==Doctor deleted successfully==]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- deleteDoctor -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.comcase.crm.Admin1.Admin1_Doctor_Test@1c33c17b]" started-at="2024-07-06T07:44:25Z" name="configAM" finished-at="2024-07-06T07:44:28Z" duration-ms="2677" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.comcase.crm.Admin1.Admin1_Doctor_Test@1c33c17b]" started-at="2024-07-06T07:44:28Z" name="configBM" finished-at="2024-07-06T07:44:36Z" duration-ms="7810" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="editDoctor()[pri:0, instance:com.comcase.crm.Admin1.Admin1_Doctor_Test@1c33c17b]" started-at="2024-07-06T07:44:36Z" name="editDoctor" finished-at="2024-07-06T07:44:55Z" duration-ms="19003" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[==Editinging Doctor details==]]>
+            </line>
+            <line>
+              <![CDATA[==Adding Doctor page is displayed==]]>
+            </line>
+            <line>
+              <![CDATA[----Doctor created-----]]>
+            </line>
+            <line>
+              <![CDATA[==Manage  Doctor page is displayed==]]>
+            </line>
+            <line>
+              <![CDATA[==Edit Doctor Details page is displayed==]]>
+            </line>
+            <line>
+              <![CDATA[editing of fees successfully]]>
+            </line>
+            <line>
+              <![CDATA[editing of ph_no successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- editDoctor -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.comcase.crm.Admin1.Admin1_Doctor_Test@1c33c17b]" started-at="2024-07-06T07:44:55Z" name="configAM" finished-at="2024-07-06T07:44:57Z" duration-ms="2516" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.comcase.crm.Admin1.Admin1_Doctor_Test@1c33c17b]" started-at="2024-07-06T07:44:57Z" name="configAC" finished-at="2024-07-06T07:45:01Z" duration-ms="4262" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->
-        <test-method is-config="true" signature="configAS()[pri:0, instance:com.comcast.crm.admin_test.Patient@66c61024]" started-at="2024-07-02T05:58:17Z" name="configAS" finished-at="2024-07-02T05:58:17Z" duration-ms="1" status="PASS">
+      </class> <!-- com.comcase.crm.Admin1.Admin1_Doctor_Test -->
+      <class name="com.comcase.crm.Admin1.Admin1_patient_user_Test">
+        <test-method is-config="true" signature="configBS()[pri:0, instance:com.comcase.crm.Admin1.Admin1_patient_user_Test@13ad5cd3]" started-at="2024-07-06T07:41:18Z" name="configBS" finished-at="2024-07-06T07:41:18Z" duration-ms="222" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBS -->
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.comcase.crm.Admin1.Admin1_patient_user_Test@13ad5cd3]" started-at="2024-07-06T07:41:18Z" name="configBC" finished-at="2024-07-06T07:41:46Z" duration-ms="27688" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.comcase.crm.Admin1.Admin1_patient_user_Test@13ad5cd3]" started-at="2024-07-06T07:41:46Z" name="configBM" finished-at="2024-07-06T07:41:51Z" duration-ms="5181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="addPaitient()[pri:0, instance:com.comcase.crm.Admin1.Admin1_patient_user_Test@13ad5cd3]" started-at="2024-07-06T07:41:51Z" name="addPaitient" finished-at="2024-07-06T07:42:42Z" duration-ms="51047" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[==Add paitient==]]>
+            </line>
+            <line>
+              <![CDATA[==Adding Doctor page is displayed==]]>
+            </line>
+            <line>
+              <![CDATA[----Doctor created-----]]>
+            </line>
+            <line>
+              <![CDATA[==Manage  Doctor page is displayed==]]>
+            </line>
+            <line>
+              <![CDATA[=Admin logged out successfully=]]>
+            </line>
+            <line>
+              <![CDATA[=Doctor able to login=]]>
+            </line>
+            <line>
+              <![CDATA[=AddPatient page is displayed=]]>
+            </line>
+            <line>
+              <![CDATA[=Patient added successfully=]]>
+            </line>
+            <line>
+              <![CDATA[=AddPatient page is displayed=]]>
+            </line>
+            <line>
+              <![CDATA[=Doctor logged out successfully=]]>
+            </line>
+            <line>
+              <![CDATA[==admin dashboard page is displayed==]]>
+            </line>
+            <line>
+              <![CDATA[==paitent details page is displayed==]]>
+            </line>
+            <line>
+              <![CDATA[--patient details displayed---]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addPaitient -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.comcase.crm.Admin1.Admin1_patient_user_Test@13ad5cd3]" started-at="2024-07-06T07:42:42Z" name="configAM" finished-at="2024-07-06T07:42:45Z" duration-ms="2230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.comcase.crm.Admin1.Admin1_patient_user_Test@13ad5cd3]" started-at="2024-07-06T07:42:45Z" name="configBM" finished-at="2024-07-06T07:42:49Z" duration-ms="4309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="deleteUser()[pri:0, instance:com.comcase.crm.Admin1.Admin1_patient_user_Test@13ad5cd3]" started-at="2024-07-06T07:42:49Z" name="deleteUser" finished-at="2024-07-06T07:43:07Z" duration-ms="18576" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[==Deleting User==]]>
+            </line>
+            <line>
+              <![CDATA[=Admin logged out successfully=]]>
+            </line>
+            <line>
+              <![CDATA[=Login page is displayed=]]>
+            </line>
+            <line>
+              <![CDATA[=user createded successfully=]]>
+            </line>
+            <line>
+              <![CDATA[=Login page is displayed=]]>
+            </line>
+            <line>
+              <![CDATA[==admin dashboard page is displayed==]]>
+            </line>
+            <line>
+              <![CDATA[==User details page is displayed==]]>
+            </line>
+            <line>
+              <![CDATA[--completed---]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- deleteUser -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.comcase.crm.Admin1.Admin1_patient_user_Test@13ad5cd3]" started-at="2024-07-06T07:43:07Z" name="configAM" finished-at="2024-07-06T07:43:09Z" duration-ms="1528" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.comcase.crm.Admin1.Admin1_patient_user_Test@13ad5cd3]" started-at="2024-07-06T07:43:09Z" name="configAC" finished-at="2024-07-06T07:43:11Z" duration-ms="1652" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+        <test-method is-config="true" signature="configAS()[pri:0, instance:com.comcase.crm.Admin1.Admin1_patient_user_Test@13ad5cd3]" started-at="2024-07-06T07:45:02Z" name="configAS" finished-at="2024-07-06T07:45:02Z" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAS -->
-      </class> <!-- com.comcast.crm.admin_test.Patient -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.comcase.crm.Admin1.Admin1_patient_user_Test -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

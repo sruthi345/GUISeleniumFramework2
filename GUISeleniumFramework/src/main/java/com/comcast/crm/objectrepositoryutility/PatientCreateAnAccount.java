@@ -81,7 +81,7 @@ public class PatientCreateAnAccount {
 		FullNameTxt.sendKeys(fullNameTxt);
 		AddressTxt.sendKeys(address);
 		cityTxt.sendKeys(city);
-		FemaleRadioBtn.click();
+		MaleRadioBtn.click();
 		emailTxt.sendKeys(email);
 		passwordTxt.sendKeys(password);
 		PwdAgainTxt.sendKeys(confirmPassword);
