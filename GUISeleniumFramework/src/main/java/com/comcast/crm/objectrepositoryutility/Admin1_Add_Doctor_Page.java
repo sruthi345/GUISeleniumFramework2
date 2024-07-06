@@ -103,7 +103,7 @@ public class Admin1_Add_Doctor_Page extends WebDriverUtility {
 	 * @param cpassword
 	 */
 	public void addDoctor(String specialization,String name,String address,String fees,String ph_no,String email,String password,String cpassword ) {
-		AddDoctor.click();
+		
 		Doctorspecializationdropdown.sendKeys(specialization);
 		DoctornameTxt.sendKeys(name);
 		DoctorclinicadressTxt.sendKeys(address);

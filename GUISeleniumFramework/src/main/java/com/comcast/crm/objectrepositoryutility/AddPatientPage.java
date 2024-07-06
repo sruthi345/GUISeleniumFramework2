@@ -38,7 +38,7 @@ public class AddPatientPage {
 	@FindBy(id = "patemail")
 	private WebElement patientEmailTxt;
 	
-	@FindBy(id = "//label[@for='rg-female']")
+	@FindBy(xpath = "//label[@for='rg-female']")
 	private WebElement genderFemaleRadioBtn;
 	
 	@FindBy(xpath = "//label[@for='rg-male']")
@@ -161,10 +161,16 @@ public class AddPatientPage {
 		enterPatientNameTxt.sendKeys(patName);
 		patientContactNoTxt.sendKeys(PatContactNo);
 		patientEmailTxt.sendKeys(patEmail);
+		
 		genderFemaleRadioBtn.click();
 		patientAddressTxt.sendKeys(patAddress);
 		patientAgeTxt.sendKeys(patAge);
 		medicalHistoryTxt.sendKeys(medicalHistory);
 		addBtn.click();
+	}
+	public boolean verifyingAddedPatient(WebDriver driver,String patName) {
+	driver.findElement(By.xpath("//td[text()='"+patName+"']/..//i[@class='fa fa-eye']")).click();
+	boolean addedpatientName = driver.findElement(By.xpath("(//td[text()='"+patName+"'])[1]")).isDisplayed();
+	return addedpatientName;
 	}
 }

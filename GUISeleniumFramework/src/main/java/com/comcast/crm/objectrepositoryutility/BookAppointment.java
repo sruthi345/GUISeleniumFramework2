@@ -8,6 +8,7 @@ import java.util.Date;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -99,10 +100,50 @@ public class BookAppointment {
 		 apptime.sendKeys(currentTime);
 		 submitBtn.click(); 
 	 }
-	 public void verifyBookAppointment(String patName) throws InterruptedException {
+	 public boolean verifyBookAppointment(String patName) {
+//		 Actions action = new Actions(driver);
+//			DateFormat df = new SimpleDateFormat("hh");
+//			Calendar calobj = Calendar.getInstance();
+//			String currentTime1 = df.format(calobj.getTime());
+//		    Integer c = Integer.valueOf(currentTime1);
+//		    int n = c.intValue();
+//		    n=n+12;
+//		    String currentTime = String.valueOf(n);
+		 
 		 System.out.println("=====");
-		 driver.findElement(By.xpath("//td[text()='"+patName+"']/..//td[contains(text(),'"+date+"')]"));
-		
-		
+		 
+		 Calendar cal = Calendar.getInstance();
+			Date date = cal.getTime();
+			SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+			int hrs= date.getHours();
+			int min=date.getMinutes();
+			String modDate=sdf.format(date)+" "+hrs+":"+min;
+			System.out.println(modDate);
+		 
+		 boolean status = driver.findElement(By.xpath("//td[text()='"+patName+"']/..//td[contains(text(),'"+modDate+"')]")).isDisplayed();
+		System.out.println(status);
+		 return status;
+	 }
+	 
+	 public void CapturingTimeDate(String patientName) {
+//		 Actions action = new Actions(driver);
+//			DateFormat df = new SimpleDateFormat("hh");
+//			Calendar calobj = Calendar.getInstance();
+//			String currentTime1 = df.format(calobj.getTime());
+//		    Integer c = Integer.valueOf(currentTime1);
+//		    int n = c.intValue();
+//		    n=n+12;
+//		    String currentTime = String.valueOf(n);
+		 Calendar cal = Calendar.getInstance();
+			Date date = cal.getTime();
+			SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+			int hrs= date.getHours();
+			int min=date.getMinutes();
+			String modDate=sdf.format(date)+" "+hrs+":"+min;
+			System.out.println(modDate);
+			
+			WebElement status = driver.findElement(
+					By.xpath("//td[text()='" + patientName + "']/..//td[contains(text(),'" + modDate + "')]/..//a[text()='Cancel']"));
+			status.click();
 	 }
 }
