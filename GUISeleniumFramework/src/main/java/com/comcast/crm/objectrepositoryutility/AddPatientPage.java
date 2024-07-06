@@ -33,10 +33,10 @@ public class AddPatientPage extends WebDriverUtility{
 	@FindBy(id = "patemail")
 	private WebElement patientEmailTxt;
 	
-	@FindBy(id = "rg-female")
+	@FindBy(xpath =  "//label[@for='rg-female']")
 	private WebElement genderFemaleRadioBtn;
 	
-	@FindBy(id = "rg-male")
+	@FindBy(xpath =  "//label[@for='rg-male']")
 	private WebElement genderMaleRadioBtn;
 	
 	@FindBy(name = "pataddress")
@@ -100,7 +100,7 @@ public class AddPatientPage extends WebDriverUtility{
 	 */
 	
 	public void addMalePatients(String patName,String PatContactNo, String patEmail, String patAddress, String patAge, String medicalHistory) {
-		wbD.waitForElementPresent(driver,enterPatientNameTxt );
+		//wbD.waitForElementPresent(driver,enterPatientNameTxt );
 		enterPatientNameTxt.sendKeys(patName);
 		patientContactNoTxt.sendKeys(PatContactNo);
 		patientEmailTxt.sendKeys(patEmail);

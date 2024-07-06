@@ -19,18 +19,32 @@ public class Admin1_Manage_Doctors_Page {
 	}
 	
 	
-	
+	/**
+	 * this method is used to click on doctor edit icon
+	 * @param driver
+	 * @param DoctorName
+	 */
 	public void editDcotor(WebDriver driver,String DoctorName) {
-	
+	  
 		driver.findElement(By.xpath("//td[text()='"+DoctorName+"']/..//i[@class='fa fa-pencil']")).click();
 	}
 	
-
+	/**
+	 * this method is used to click on doctor delete icon
+	 * @param driver
+	 * @param DoctorName
+	*/
 	public void deleteDcotor(WebDriver driver,String DoctorName) {
 	
 		driver.findElement(By.xpath("//td[text()='"+DoctorName+"']/..//i[@class='fa fa-times fa fa-white']")).click();
 	}
 	
+	@FindBy(xpath = "//p[contains(text(),'data deleted !!')]	")
+	private WebElement DoctordeletedconfirmMsg;
+
+	public WebElement getDoctordeletedconfirmMsg() {
+		return DoctordeletedconfirmMsg;
+	}
 	
 
 }
