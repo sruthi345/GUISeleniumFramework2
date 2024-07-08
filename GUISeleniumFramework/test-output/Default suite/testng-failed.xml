@@ -3,18 +3,35 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
+      <class name="com.comcast.hms.doctorModule.BookAndCancelAppointmentAndViewInAppointmentHistory">
+=======
       <class name="com.comcase.crm.Admin1.Admin1_patient_user_Test">
+>>>>>>> branch 'master' of https://github.com/AnbumathiM/GUIFramework.git
         <methods>
+<<<<<<< HEAD
+=======
           <include name="configAM"/>
+>>>>>>> branch 'master' of https://github.com/AnbumathiM/GUIFramework.git
           <include name="configBS"/>
           <include name="configBC"/>
           <include name="configAS"/>
           <include name="configAC"/>
+<<<<<<< HEAD
+          <include name="BookingAndCancelAppointment"/>
+          <include name="configBM"/>
+          <include name="configAM"/>
+=======
           <include name="addPaitient"/>
           <include name="configBM"/>
           <include name="deleteUser"/>
+>>>>>>> branch 'master' of https://github.com/AnbumathiM/GUIFramework.git
         </methods>
+<<<<<<< HEAD
+      </class> <!-- com.comcast.hms.doctorModule.BookAndCancelAppointmentAndViewInAppointmentHistory -->
+=======
       </class> <!-- com.comcase.crm.Admin1.Admin1_patient_user_Test -->
+>>>>>>> branch 'master' of https://github.com/AnbumathiM/GUIFramework.git
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

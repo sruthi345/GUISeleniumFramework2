@@ -39,6 +39,12 @@ public class Admin1_Manage_Doctors_Page {
 		driver.findElement(By.xpath("//td[text()='"+DoctorName+"']/..//i[@class='fa fa-times fa fa-white']")).click();
 	}
 	
+
+	public boolean verifyAddedDoctor(WebDriver driver,String doctor) {
+		boolean status = driver.findElement(By.xpath("//td[text()='"+doctor+"']")).isDisplayed();
+		return status;
+	}
+
 	@FindBy(xpath = "//p[contains(text(),'data deleted !!')]	")
 	private WebElement DoctordeletedconfirmMsg;
 
@@ -46,5 +52,6 @@ public class Admin1_Manage_Doctors_Page {
 		return DoctordeletedconfirmMsg;
 	}
 	
+
 
 }

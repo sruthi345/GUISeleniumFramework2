@@ -1,5 +1,6 @@
 package com.comcast.crm.objectrepositoryutility;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -53,5 +54,22 @@ public class AddMedicalHistoryPage {
 		return submitBtn;
 	}
 	
+	public void addingMedicalHis(String bloodPressure,String bloodSugar, String Weight, String bodyTemp, String prescription) {
+		bpTxt.click();
+		bpTxt.sendKeys(bloodPressure);
+		bloodSugarTxt.click();
+		bloodSugarTxt.sendKeys(bloodSugar);
+		weightTxt.click();
+		weightTxt.sendKeys(Weight);
+		bodyTempTxt.click();
+		bodyTempTxt.sendKeys(bodyTemp);
+		prescriptionTxt.click();
+		prescriptionTxt.sendKeys(prescription);
+		
+	}
+	public void verifyPatientForMedicalHistory(WebDriver driver,String patName) {
+		driver.findElement(By.xpath("//td[text()='"+patName+"']/..//i[@class='fa fa-eye']")).click();
+		boolean status = driver.findElement(By.xpath("(//td[text()='"+patName+"'])[1]")).isDisplayed();
+	}
 	
 }

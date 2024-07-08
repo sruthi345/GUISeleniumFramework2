@@ -187,7 +187,7 @@ public class WebDriverUtility {
 	public boolean selectDynamicValue(WebElement element , String text) {
 		boolean flag = false;
 		Select sel = new Select(element);
-	   List<WebElement> lst = 	sel.getOptions();
+	    List<WebElement> lst = sel.getOptions();
 	   for(WebElement opt: lst ) {
 		   if(opt.getText().equals(text)) {
 			   sel.selectByVisibleText(text);
@@ -275,14 +275,3 @@ public class WebDriverUtility {
 	}
 	
 }
-
-
-
-
-
-
-
-
-
-
-
