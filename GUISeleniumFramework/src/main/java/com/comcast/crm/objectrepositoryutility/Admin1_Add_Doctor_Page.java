@@ -92,7 +92,7 @@ public class Admin1_Add_Doctor_Page extends WebDriverUtility {
 		
 	}
 	/**
-	 * to add doctor
+	 * this method is used to add doctor
 	 * @param specialization
 	 * @param name
 	 * @param address

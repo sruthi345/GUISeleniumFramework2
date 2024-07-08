@@ -126,9 +126,18 @@ public class Admin1_Dashboard_Page extends WebDriverUtility {
 	 @FindBy(xpath ="//span[text()=' Manage Users ']")
 		private WebElement ManageUsersLink;
 	 
+	 public WebElement getManagepatientLink() {
+		return ManagepatientLink;
+	}
+
+	@FindBy(xpath ="//span[text()=' Manage Patients ']")
+		private WebElement ManagepatientLink;
+	 
 	 @FindBy(xpath ="//span[text()='B/w dates reports ']")
 		private WebElement BetweendatesreportsLink;
-	 
+	 /*
+	  * this methos is used to find row count 
+	  */
 	 public int gettablecount(WebDriver driver) {
 		 
 		 List<WebElement> list = driver.findElements(By.xpath("//tbody/tr"));

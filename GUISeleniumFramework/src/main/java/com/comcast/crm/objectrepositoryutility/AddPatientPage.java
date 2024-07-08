@@ -38,10 +38,10 @@ public class AddPatientPage {
 	@FindBy(id = "patemail")
 	private WebElement patientEmailTxt;
 	
-	@FindBy(xpath = "//label[@for='rg-female']")
+	@FindBy(xpath =  "//label[@for='rg-female']")
 	private WebElement genderFemaleRadioBtn;
 	
-	@FindBy(xpath = "//label[@for='rg-male']")
+	@FindBy(xpath =  "//label[@for='rg-male']")
 	private WebElement genderMaleRadioBtn;
 	
 	@FindBy(name = "pataddress")

@@ -33,6 +33,7 @@ public class ExcelUtility {
 		return data;
 	}
 	
+
 public String getDataFromExceladmin1(String sheetName , int rowNum , int celNum) throws Throwable {
 		
 		FileInputStream fis = new FileInputStream(".\\testdata\\admin1testScriptdata.xlsx");
@@ -51,7 +52,7 @@ public String getDataFromExceladmin1(String sheetName , int rowNum , int celNum)
 	 */
 public String getDataFromExcelDoctor(String sheetName , int rowNum , int celNum) throws Throwable {
 		
-		FileInputStream fis = new FileInputStream(".\\testdata\\doctortestScriptdata.xlsx");
+		FileInputStream fis = new FileInputStream(".\\testdata\\doctortestScriptdata.xlsx");		
 		Workbook wb =  WorkbookFactory.create(fis);
 	    String data = wb.getSheet(sheetName).getRow(rowNum).getCell(celNum).getStringCellValue();
 	    wb.close();

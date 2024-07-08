@@ -90,7 +90,7 @@ public class PatientRegisterPage extends WebDriverUtility{
 		 	return PatientPasswordAgaintxtfield;
 		 }
 		 
-		 @FindBy(id="submit")
+		 @FindBy(xpath = "//button[@type='submit']")
 		 private WebElement PatientSubmitButton;
 
 		 public WebElement getPatientSubmitButton()
