@@ -28,7 +28,7 @@ import com.comcast.crm.objectrepositoryutility.LoginPage;
 @Listeners(com.comcast.crm.generic.listenerutility.ListImpClass.class)
 public class DoctorAppoimentHistoryTest extends PatientBaseClass {
 	@Test
-	public void AppHistoryTest() throws Throwable {
+	public void DocAppHistoryTest() throws Throwable {
 
 		/* featching the data from the excel */
 		String docSpecilization = eLib.getDataFromExcel("patient", 5, 1);

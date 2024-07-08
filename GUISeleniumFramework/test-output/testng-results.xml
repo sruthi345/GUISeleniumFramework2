@@ -1,31 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="8" total="13" passed="5" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[==alert is handeld==]]>
+    </line>
+    <line>
+      <![CDATA[==logout as patient==]]>
+    </line>
+    <line>
+      <![CDATA[==doctor dashboard page is dispalayed==]]>
+    </line>
+    <line>
+      <![CDATA[==doctor dashboard page is dispalayed==]]>
+    </line>
+    <line>
+      <![CDATA[==booked patient appointment reflected in Doctor AppointmetnHistory==]]>
+    </line>
     <line>
       <![CDATA[==profilelink page is displyed==]]>
     </line>
     <line>
       <![CDATA[==patient name is edited==]]>
     </line>
+    <line>
+      <![CDATA[==Appointment history page is displyed==]]>
+    </line>
+    <line>
+      <![CDATA[==booked appointment is verified==]]>
+    </line>
+    <line>
+      <![CDATA[==patient appointment is booked==]]>
+    </line>
+    <line>
+      <![CDATA[==login as admin==]]>
+    </line>
+    <line>
+      <![CDATA[==Appointmetn history page is displayed-==]]>
+    </line>
+    <line>
+      <![CDATA[==booked patient appointment reflected in admin AppointmetnHistory==]]>
+    </line>
+    <line>
+      <![CDATA[==logout as admin==]]>
+    </line>
+    <line>
+      <![CDATA[==login as doctor==]]>
+    </line>
+    <line>
+      <![CDATA[==booked patient appointment reflected in Doctor AppointmetnHistory==]]>
+    </line>
+    <line>
+      <![CDATA[==Registration page is displyed==]]>
+    </line>
+    <line>
+      <![CDATA[==patient login page is displyed==]]>
+    </line>
+    <line>
+      <![CDATA[==appointment history page is displayed==]]>
+    </line>
+    <line>
+      <![CDATA[==booked appointment is verified==]]>
+    </line>
   </reporter-output>
-  <suite started-at="2024-07-08T06:39:19Z" name="Default suite" finished-at="2024-07-08T06:39:37Z" duration-ms="18034">
+  <suite started-at="2024-07-08T09:39:45Z" name="Suite" finished-at="2024-07-08T09:41:20Z" duration-ms="94324">
     <groups>
     </groups>
-    <test started-at="2024-07-08T06:39:19Z" name="Default test" finished-at="2024-07-08T06:39:37Z" duration-ms="18034">
+    <test started-at="2024-07-08T09:39:45Z" name="Test" finished-at="2024-07-08T09:41:20Z" duration-ms="94324">
       <class name="com.comcast.hms.patienttest.EditUserNameTest">
-        <test-method is-config="true" signature="configBS()[pri:0, instance:com.comcast.hms.patienttest.EditUserNameTest@7e990ed7]" started-at="2024-07-08T06:39:19Z" name="configBS" finished-at="2024-07-08T06:39:19Z" duration-ms="69" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configBS -->
-        <test-method is-config="true" signature="configBC()[pri:0, instance:com.comcast.hms.patienttest.EditUserNameTest@7e990ed7]" started-at="2024-07-08T06:39:19Z" name="configBC" finished-at="2024-07-08T06:39:30Z" duration-ms="10884" status="PASS">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.comcast.hms.patienttest.EditUserNameTest@491b9b8]" started-at="2024-07-08T09:40:08Z" name="configBC" finished-at="2024-07-08T09:40:16Z" duration-ms="8366" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.comcast.hms.patienttest.EditUserNameTest@7e990ed7]" started-at="2024-07-08T06:39:30Z" name="configBM" finished-at="2024-07-08T06:39:33Z" duration-ms="3144" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.comcast.hms.patienttest.EditUserNameTest@491b9b8]" started-at="2024-07-08T09:40:16Z" name="configBM" finished-at="2024-07-08T09:40:18Z" duration-ms="2107" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="EditNameTest()[pri:0, instance:com.comcast.hms.patienttest.EditUserNameTest@7e990ed7]" started-at="2024-07-08T06:39:33Z" name="EditNameTest" finished-at="2024-07-08T06:39:37Z" duration-ms="3287" status="PASS">
+        <test-method signature="EditNameTest()[pri:0, instance:com.comcast.hms.patienttest.EditUserNameTest@491b9b8]" started-at="2024-07-08T09:40:18Z" name="EditNameTest" finished-at="2024-07-08T09:40:20Z" duration-ms="1864" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[==profilelink page is displyed==]]>
@@ -35,19 +85,165 @@
             </line>
           </reporter-output>
         </test-method> <!-- EditNameTest -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:com.comcast.hms.patienttest.EditUserNameTest@7e990ed7]" started-at="2024-07-08T06:39:37Z" name="configAM" finished-at="2024-07-08T06:39:37Z" duration-ms="268" status="PASS">
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.comcast.hms.patienttest.EditUserNameTest@491b9b8]" started-at="2024-07-08T09:40:20Z" name="configAM" finished-at="2024-07-08T09:40:20Z" duration-ms="230" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:com.comcast.hms.patienttest.EditUserNameTest@7e990ed7]" started-at="2024-07-08T06:39:37Z" name="configAC" finished-at="2024-07-08T06:39:37Z" duration-ms="401" status="PASS">
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.comcast.hms.patienttest.EditUserNameTest@491b9b8]" started-at="2024-07-08T09:40:20Z" name="configAC" finished-at="2024-07-08T09:40:21Z" duration-ms="355" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->
-        <test-method is-config="true" signature="configAS()[pri:0, instance:com.comcast.hms.patienttest.EditUserNameTest@7e990ed7]" started-at="2024-07-08T06:39:37Z" name="configAS" finished-at="2024-07-08T06:39:37Z" duration-ms="1" status="PASS">
+      </class> <!-- com.comcast.hms.patienttest.EditUserNameTest -->
+      <class name="com.comcast.hms.patienttest.DoctorAppoimentHistoryTest">
+        <test-method is-config="true" signature="configBS()[pri:0, instance:com.comcast.hms.patienttest.DoctorAppoimentHistoryTest@79207381]" started-at="2024-07-08T09:39:45Z" name="configBS" finished-at="2024-07-08T09:39:45Z" duration-ms="51" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBS -->
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.comcast.hms.patienttest.DoctorAppoimentHistoryTest@79207381]" started-at="2024-07-08T09:39:45Z" name="configBC" finished-at="2024-07-08T09:39:59Z" duration-ms="13423" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.comcast.hms.patienttest.DoctorAppoimentHistoryTest@79207381]" started-at="2024-07-08T09:39:59Z" name="configBM" finished-at="2024-07-08T09:40:02Z" duration-ms="2751" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="DocAppHistoryTest()[pri:0, instance:com.comcast.hms.patienttest.DoctorAppoimentHistoryTest@79207381]" started-at="2024-07-08T09:40:02Z" name="DocAppHistoryTest" finished-at="2024-07-08T09:40:06Z" duration-ms="4692" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[==alert is handeld==]]>
+            </line>
+            <line>
+              <![CDATA[==logout as patient==]]>
+            </line>
+            <line>
+              <![CDATA[==doctor dashboard page is dispalayed==]]>
+            </line>
+            <line>
+              <![CDATA[==doctor dashboard page is dispalayed==]]>
+            </line>
+            <line>
+              <![CDATA[==booked patient appointment reflected in Doctor AppointmetnHistory==]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- DocAppHistoryTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.comcast.hms.patienttest.DoctorAppoimentHistoryTest@79207381]" started-at="2024-07-08T09:40:06Z" name="configAM" finished-at="2024-07-08T09:40:07Z" duration-ms="494" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.comcast.hms.patienttest.DoctorAppoimentHistoryTest@79207381]" started-at="2024-07-08T09:40:07Z" name="configAC" finished-at="2024-07-08T09:40:08Z" duration-ms="1012" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+        <test-method is-config="true" signature="configAS()[pri:0, instance:com.comcast.hms.patienttest.DoctorAppoimentHistoryTest@79207381]" started-at="2024-07-08T09:41:20Z" name="configAS" finished-at="2024-07-08T09:41:20Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAS -->
-      </class> <!-- com.comcast.hms.patienttest.EditUserNameTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.comcast.hms.patienttest.DoctorAppoimentHistoryTest -->
+      <class name="com.comcast.hms.patienttest.AppointmentHistoryTest">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.comcast.hms.patienttest.AppointmentHistoryTest@1a4927d6]" started-at="2024-07-08T09:40:21Z" name="configBC" finished-at="2024-07-08T09:40:29Z" duration-ms="8217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.comcast.hms.patienttest.AppointmentHistoryTest@1a4927d6]" started-at="2024-07-08T09:40:29Z" name="configBM" finished-at="2024-07-08T09:40:33Z" duration-ms="4547" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="AppHistoryTest()[pri:0, instance:com.comcast.hms.patienttest.AppointmentHistoryTest@1a4927d6]" started-at="2024-07-08T09:40:33Z" name="AppHistoryTest" finished-at="2024-07-08T09:40:35Z" duration-ms="1816" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[==Appointment history page is displyed==]]>
+            </line>
+            <line>
+              <![CDATA[==booked appointment is verified==]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AppHistoryTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.comcast.hms.patienttest.AppointmentHistoryTest@1a4927d6]" started-at="2024-07-08T09:40:35Z" name="configAM" finished-at="2024-07-08T09:40:36Z" duration-ms="351" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.comcast.hms.patienttest.AppointmentHistoryTest@1a4927d6]" started-at="2024-07-08T09:40:36Z" name="configAC" finished-at="2024-07-08T09:40:36Z" duration-ms="309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- com.comcast.hms.patienttest.AppointmentHistoryTest -->
+      <class name="com.comcast.hms.patienttest.CreateAccountTest">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.comcast.hms.patienttest.CreateAccountTest@aba625]" started-at="2024-07-08T09:41:00Z" name="configBC" finished-at="2024-07-08T09:41:09Z" duration-ms="9201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.comcast.hms.patienttest.CreateAccountTest@aba625]" started-at="2024-07-08T09:41:09Z" name="configBM" finished-at="2024-07-08T09:41:13Z" duration-ms="4271" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="CreateaccountTest()[pri:0, instance:com.comcast.hms.patienttest.CreateAccountTest@aba625]" started-at="2024-07-08T09:41:13Z" name="CreateaccountTest" finished-at="2024-07-08T09:41:19Z" duration-ms="5521" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[==Registration page is displyed==]]>
+            </line>
+            <line>
+              <![CDATA[==patient login page is displyed==]]>
+            </line>
+            <line>
+              <![CDATA[==appointment history page is displayed==]]>
+            </line>
+            <line>
+              <![CDATA[==booked appointment is verified==]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CreateaccountTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.comcast.hms.patienttest.CreateAccountTest@aba625]" started-at="2024-07-08T09:41:19Z" name="configAM" finished-at="2024-07-08T09:41:19Z" duration-ms="192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.comcast.hms.patienttest.CreateAccountTest@aba625]" started-at="2024-07-08T09:41:19Z" name="configAC" finished-at="2024-07-08T09:41:20Z" duration-ms="470" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- com.comcast.hms.patienttest.CreateAccountTest -->
+      <class name="com.comcast.hms.patienttest.AdminApointmentHistoryTest">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.comcast.hms.patienttest.AdminApointmentHistoryTest@7a6d7e92]" started-at="2024-07-08T09:40:36Z" name="configBC" finished-at="2024-07-08T09:40:46Z" duration-ms="9921" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.comcast.hms.patienttest.AdminApointmentHistoryTest@7a6d7e92]" started-at="2024-07-08T09:40:46Z" name="configBM" finished-at="2024-07-08T09:40:50Z" duration-ms="4069" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="AdminAppHistoryTest()[pri:0, instance:com.comcast.hms.patienttest.AdminApointmentHistoryTest@7a6d7e92]" started-at="2024-07-08T09:40:50Z" name="AdminAppHistoryTest" finished-at="2024-07-08T09:40:59Z" duration-ms="9162" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[==patient appointment is booked==]]>
+            </line>
+            <line>
+              <![CDATA[==login as admin==]]>
+            </line>
+            <line>
+              <![CDATA[==Appointmetn history page is displayed-==]]>
+            </line>
+            <line>
+              <![CDATA[==booked patient appointment reflected in admin AppointmetnHistory==]]>
+            </line>
+            <line>
+              <![CDATA[==logout as admin==]]>
+            </line>
+            <line>
+              <![CDATA[==login as doctor==]]>
+            </line>
+            <line>
+              <![CDATA[==booked patient appointment reflected in Doctor AppointmetnHistory==]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AdminAppHistoryTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.comcast.hms.patienttest.AdminApointmentHistoryTest@7a6d7e92]" started-at="2024-07-08T09:40:59Z" name="configAM" finished-at="2024-07-08T09:40:59Z" duration-ms="388" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.comcast.hms.patienttest.AdminApointmentHistoryTest@7a6d7e92]" started-at="2024-07-08T09:40:59Z" name="configAC" finished-at="2024-07-08T09:41:00Z" duration-ms="527" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- com.comcast.hms.patienttest.AdminApointmentHistoryTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
