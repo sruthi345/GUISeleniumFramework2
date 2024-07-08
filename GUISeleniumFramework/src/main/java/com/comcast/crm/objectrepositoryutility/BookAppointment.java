@@ -1,16 +1,20 @@
 package com.comcast.crm.objectrepositoryutility;
 
 import java.text.DateFormat;
+
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Date;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.comcast.crm.generic.webdriverutility.JavaUtility;
+/**
+ * 
+ * @author sruthi
+ *
+ */
 
 public class BookAppointment {
 	WebDriver driver;
@@ -87,8 +91,12 @@ public class BookAppointment {
 		 DateFormat df=new SimpleDateFormat("hh:mm");
 		 Calendar calobj=Calendar.getInstance();
 		 String currentTime = df.format(calobj.getTime());
-	 
-	 public void BookAppointment(String doctorSpecilization,String doctor)
+	 /**
+	  * BookAppointment businesslogic
+	  * @param doctorSpecilization
+	  * @param doctor
+	  */
+	 public void getBookAppointment(String doctorSpecilization,String doctor)
 	 {
 		 BookAppointmentlink.click();
 		 Doctorspecializationdropdown.sendKeys(doctorSpecilization);

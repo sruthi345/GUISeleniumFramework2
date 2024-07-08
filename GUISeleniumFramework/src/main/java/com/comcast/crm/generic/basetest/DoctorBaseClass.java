@@ -82,7 +82,7 @@ public class DoctorBaseClass {
 	    
 	    @BeforeMethod(groups = {"smokeTest", "regressionTest"})
 		public void configBM() throws Throwable {
-			System.out.println("=login=");
+			System.out.println("=login as doc=");
 			String USERNAME = System.getProperty("Doctorusername" , fLib.getDataFromPropertiesFile("Doctorusername"));
 			String PASSWORD = System.getProperty("Doctorpassword" , fLib.getDataFromPropertiesFile("Doctorpassword"));
 			hp = new Home(driver);
@@ -94,7 +94,7 @@ public class DoctorBaseClass {
 	    
 		@AfterMethod(groups = {"smokeTest", "regressionTest"})
 		public void configAM() {
-			System.out.println("=logout=");
+			System.out.println("=logout as doctor=");
 			Home hp = new Home(driver);
 			hp.getAdminAccount().click();
 			hp.getLogoutLink().click();

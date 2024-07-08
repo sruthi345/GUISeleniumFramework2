@@ -21,6 +21,7 @@ import com.comcast.crm.generic.fileutility.ExcelUtility;
 import com.comcast.crm.generic.fileutility.FileUtility;
 import com.comcast.crm.generic.webdriverutility.JavaUtility;
 import com.comcast.crm.generic.webdriverutility.UtilityClassObject;
+import com.comcast.crm.generic.webdriverutility.WebDriverUtility;
 import com.comcast.crm.objectrepositoryutility.Home;
 import com.comcast.crm.objectrepositoryutility.LoginPage;
 
@@ -28,6 +29,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class PatientBaseClass {
 	/* Create Object */
+	public WebDriverUtility wLib=new WebDriverUtility();
 	public DataBaseUtility dbLib = new DataBaseUtility();
 	public FileUtility fLib = new FileUtility();
 	public ExcelUtility eLib = new ExcelUtility();
@@ -82,7 +84,7 @@ public class PatientBaseClass {
 	    
 	    @BeforeMethod(groups = {"smokeTest", "regressionTest"})
 		public void configBM() throws Throwable {
-			System.out.println("=login=");
+			System.out.println("=login as patient=");
 			String USERNAME = System.getProperty("Patientusername" , fLib.getDataFromPropertiesFile("Patientusername"));
 			String PASSWORD = System.getProperty("Patientpassword" , fLib.getDataFromPropertiesFile("Patientpassword"));
 			hp = new Home(driver);
@@ -94,7 +96,7 @@ public class PatientBaseClass {
 	    
 		@AfterMethod(groups = {"smokeTest", "regressionTest"})
 		public void configAM() {
-			System.out.println("=logout=");
+			System.out.println("=logout patient=");
 			Home hp = new Home(driver);
 			hp.getAdminAccount().click();
 			hp.getLogoutLink().click();

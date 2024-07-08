@@ -3,19 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.comcast.crm.contacttest.CreateContactTest">
+      <class name="com.comcast.hms.patienttest.CreateAccountTest">
         <methods>
-          <include name="createConTactTest"/>
-          <include name="createContactWithOrgTest"/>
-          <include name="configBM"/>
-          <include name="createContactWithsupportDateTest"/>
-          <include name="configAM"/>
           <include name="configBS"/>
           <include name="configBC"/>
+          <include name="CreateaccountTest"/>
           <include name="configAS"/>
           <include name="configAC"/>
+          <include name="configBM"/>
+          <include name="configAM"/>
         </methods>
-      </class> <!-- com.comcast.crm.contacttest.CreateContactTest -->
+      </class> <!-- com.comcast.hms.patienttest.CreateAccountTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
