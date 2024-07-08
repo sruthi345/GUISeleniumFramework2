@@ -185,21 +185,6 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.comcast.hms.doctorModule.BookAndCancelAppointmentAndViewInAppointmentHistory</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="BookingAndCancelAppointment">
-                  </a> <!-- BookingAndCancelAppointment -->
-                  <span class="method-name">BookingAndCancelAppointment</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">com.comcast.hms.doctorModule.AddPatientWithEnteringAllDetailsAndVerifyInManagePatients</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -208,6 +193,21 @@
                   <a name="addPatientWithName_Contact">
                   </a> <!-- addPatientWithName_Contact -->
                   <span class="method-name">addPatientWithName_Contact</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.comcast.hms.doctorModule.BookAndCancelAppointmentAndViewInAppointmentHistory</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="BookingAndCancelAppointment">
+                  </a> <!-- BookingAndCancelAppointment -->
+                  <span class="method-name">BookingAndCancelAppointment</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -272,28 +272,28 @@ data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'BookingAndCancelAppointment')
 data.setCell(0, 2, 'com.comcast.hms.doctorModule.BookAndCancelAppointmentAndViewInAppointmentHistory')
-data.setCell(0, 3, 9598);
+data.setCell(0, 3, 14059);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'CreateDoctorAndVerify')
-data.setCell(1, 2, 'com.comcast.hms.doctorModule.AddDoctorAndVerifyInManageDoctorPageTest')
-data.setCell(1, 3, 7022);
+data.setCell(1, 1, 'addMedicalHistory')
+data.setCell(1, 2, 'com.comcast.hms.doctorModule.DoctorAddingMedicalHistoryTest')
+data.setCell(1, 3, 11880);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'addMedicalHistory')
-data.setCell(2, 2, 'com.comcast.hms.doctorModule.DoctorAddingMedicalHistoryTest')
-data.setCell(2, 3, 6976);
+data.setCell(2, 1, 'CreateDoctorAndVerify')
+data.setCell(2, 2, 'com.comcast.hms.doctorModule.AddDoctorAndVerifyInManageDoctorPageTest')
+data.setCell(2, 3, 10050);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'addingPatientAndSearch')
 data.setCell(3, 2, 'com.comcast.hms.doctorModule.DoctorAddPatientAndSearchWithName')
-data.setCell(3, 3, 5111);
+data.setCell(3, 3, 6450);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'addPatientWithName_Contact')
 data.setCell(4, 2, 'com.comcast.hms.doctorModule.AddPatientWithEnteringAllDetailsAndVerifyInManagePatients')
-data.setCell(4, 3, 4807);
+data.setCell(4, 3, 5842);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 33 seconds</span>
+              <span class="suite-total-time">Total running time: 48 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -304,24 +304,6 @@ return data;
             <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">addingPatientAndSearch</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Clicking on addPatients dropdown and manage patient</span>
-                <span class="reporter-method-output">Invoke the method and passing all details</span>
-                <span class="reporter-method-output">Doctor able to fetch the patient details</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">BookingAndCancelAppointment</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Appointment is displayed</span>
-                <span class="reporter-method-output">Appointment is Booked</span>
-                <span class="reporter-method-output">Appointment History page is displayed</span>
-                <span class="reporter-method-output">Verifying Appointment is canceled or not</span>
-                <span class="reporter-method-output">Booking appointment is canceled</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
               <span class="reporter-method-name">addMedicalHistory</span>
               <div class="reporter-method-output-div">
@@ -345,6 +327,16 @@ return data;
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
+              <span class="reporter-method-name">BookingAndCancelAppointment</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Appointment is displayed</span>
+                <span class="reporter-method-output">Appointment is Booked</span>
+                <span class="reporter-method-output">Appointment History page is displayed</span>
+                <span class="reporter-method-output">Verifying Appointment is canceled or not</span>
+                <span class="reporter-method-output">Booking appointment is canceled</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
               <span class="reporter-method-name">CreateDoctorAndVerify</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Navigating to doctor in Admin Module</span>
@@ -354,6 +346,14 @@ return data;
                 <span class="reporter-method-output">Handled Alert</span>
                 <span class="reporter-method-output">Added Doctor verify in Manage doctor page</span>
                 <span class="reporter-method-output">Added Doctor is verified</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">addingPatientAndSearch</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Clicking on addPatients dropdown and manage patient</span>
+                <span class="reporter-method-output">Invoke the method and passing all details</span>
+                <span class="reporter-method-output">Doctor able to fetch the patient details</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -399,150 +399,150 @@ return data;
               <div class="chronological-class-name">com.comcast.hms.doctorModule.DoctorAddPatientAndSearchWithName</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">configBS</span>
-                <span class="method-start">84 ms</span>
+                <span class="method-start">98 ms</span>
               </div> <!-- configuration-suite before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.comcast.hms.doctorModule.BookAndCancelAppointmentAndViewInAppointmentHistory</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">configBS</span>
-                <span class="method-start">87 ms</span>
+                <span class="method-start">101 ms</span>
               </div> <!-- configuration-suite before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.comcast.hms.doctorModule.AddDoctorAndVerifyInManageDoctorPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">configBC</span>
-                <span class="method-start">118 ms</span>
+                <span class="method-start">128 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">configBM</span>
-                <span class="method-start">8421 ms</span>
+                <span class="method-start">16548 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">CreateDoctorAndVerify</span>
-                <span class="method-start">11662 ms</span>
+                <span class="method-start">25608 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">configAM</span>
-                <span class="method-start">18690 ms</span>
+                <span class="method-start">35664 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">configAC</span>
-                <span class="method-start">19415 ms</span>
+                <span class="method-start">36558 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.comcast.hms.doctorModule.DoctorAddPatientAndSearchWithName</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">configBC</span>
-                <span class="method-start">20612 ms</span>
+                <span class="method-start">37067 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">configBM</span>
-                <span class="method-start">26401 ms</span>
+                <span class="method-start">42253 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">addingPatientAndSearch</span>
-                <span class="method-start">32452 ms</span>
+                <span class="method-start">49045 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">configAM</span>
-                <span class="method-start">37565 ms</span>
+                <span class="method-start">55513 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">configAC</span>
-                <span class="method-start">38290 ms</span>
+                <span class="method-start">56180 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.comcast.hms.doctorModule.DoctorAddingMedicalHistoryTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">configBC</span>
-                <span class="method-start">38781 ms</span>
+                <span class="method-start">56960 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">configBM</span>
-                <span class="method-start">44076 ms</span>
+                <span class="method-start">81774 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">addMedicalHistory</span>
-                <span class="method-start">46851 ms</span>
+                <span class="method-start">87426 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">configAM</span>
-                <span class="method-start">53829 ms</span>
+                <span class="method-start">99315 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">configAC</span>
-                <span class="method-start">54490 ms</span>
+                <span class="method-start">100211 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.comcast.hms.doctorModule.AddPatientWithEnteringAllDetailsAndVerifyInManagePatients</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">configBC</span>
-                <span class="method-start">54977 ms</span>
+                <span class="method-start">101195 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">configBM</span>
-                <span class="method-start">58824 ms</span>
+                <span class="method-start">113701 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">addPatientWithName_Contact</span>
-                <span class="method-start">60788 ms</span>
+                <span class="method-start">116579 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">configAM</span>
-                <span class="method-start">65598 ms</span>
+                <span class="method-start">122421 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">configAC</span>
-                <span class="method-start">66006 ms</span>
+                <span class="method-start">123173 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.comcast.hms.doctorModule.BookAndCancelAppointmentAndViewInAppointmentHistory</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">configBC</span>
-                <span class="method-start">66846 ms</span>
+                <span class="method-start">123823 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">configBM</span>
-                <span class="method-start">71724 ms</span>
+                <span class="method-start">130645 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">BookingAndCancelAppointment</span>
-                <span class="method-start">74598 ms</span>
+                <span class="method-start">134437 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">configAM</span>
-                <span class="method-start">84202 ms</span>
+                <span class="method-start">148504 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">configAC</span>
-                <span class="method-start">84963 ms</span>
+                <span class="method-start">149157 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.comcast.hms.doctorModule.AddDoctorAndVerifyInManageDoctorPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">configAS</span>
-                <span class="method-start">85489 ms</span>
+                <span class="method-start">149900 ms</span>
               </div> <!-- configuration-suite after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.comcast.hms.doctorModule.DoctorAddPatientAndSearchWithName</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">configAS</span>
-                <span class="method-start">85490 ms</span>
+                <span class="method-start">149900 ms</span>
               </div> <!-- configuration-suite after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.comcast.hms.doctorModule.BookAndCancelAppointmentAndViewInAppointmentHistory</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">configAS</span>
-                <span class="method-start">85490 ms</span>
+                <span class="method-start">149900 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
