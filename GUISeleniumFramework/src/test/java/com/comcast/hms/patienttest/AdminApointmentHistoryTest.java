@@ -117,15 +117,6 @@ public class AdminApointmentHistoryTest extends PatientBaseClass {
 		Assert.assertEquals(actualdoTitle, expecteddocloginTitle);
 		UtilityClassObject.getTest().log(Status.PASS, "----login as doctor-----");
 		Reporter.log("==login as doctor==", true);
-
-		// verifying booked Appointment is there or not
-//		String patientName1 = eLib.getDataFromExcel("patient", 7, 1);
-//		WebElement status1 = driver.findElement(
-//				By.xpath("//td[text()='" + patientName1 + "']/..//td[contains(text(),'" + modDate + "')]"));
-//		Actions action1 = new Actions(driver);
-//		action1.scrollToElement(status1);
-//		boolean display1 = status.isDisplayed();
-//		Assert.assertTrue(display1);
 		System.out.println("completed");
 		UtilityClassObject.getTest().log(Status.PASS,
 				"----booked patient appointmentHistoty reflected in doctor AppointmetnHistory-----");

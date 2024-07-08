@@ -185,13 +185,5 @@ public class DashboardPage extends WebDriverUtility {
 		return adminAppointHistory;
 	}
 
-	public boolean verifyAdminAppointmentisbooked(WebDriver driver, String patientName) {
-
-		boolean status = driver
-				.findElement(
-						By.xpath("//td[text()='" + patientName + "']/..//td[contains(text(),'" + currentTime + "')]"))
-				.isDisplayed();
-		return status;
-	}
-
+	
 }
