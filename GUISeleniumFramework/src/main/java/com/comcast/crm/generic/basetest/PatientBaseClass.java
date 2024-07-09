@@ -34,6 +34,7 @@ public class PatientBaseClass {
 	public FileUtility fLib = new FileUtility();
 	public ExcelUtility eLib = new ExcelUtility();
 	public JavaUtility jLib = new JavaUtility();
+	public WebDriverUtility wLib=new WebDriverUtility();
 	public  WebDriver driver = null;
 	public Home hp;
 	public  static WebDriver sdriver = null;

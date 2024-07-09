@@ -43,10 +43,26 @@ public String getDataFromExcelpatient(String sheetName , int rowNum , int celNum
 	}
 	
 	
-	
-	public String getDataFromExceladmin1(String sheetName , int rowNum , int celNum) throws Throwable {
+
+public String getDataFromExceladmin1(String sheetName , int rowNum , int celNum) throws Throwable {
 		
-		FileInputStream fis = new FileInputStream("./testdata/admin1testScriptdata.xlsx");
+		FileInputStream fis = new FileInputStream(".\\testdata\\admin1testScriptdata.xlsx");
+		Workbook wb =  WorkbookFactory.create(fis);
+	    String data = wb.getSheet(sheetName).getRow(rowNum).getCell(celNum).getStringCellValue();
+	    wb.close();
+		return data;
+	}
+	/**
+	 * read data from Excel based row and column index
+	 * @param sheetName
+	 * @param rowNum
+	 * @param celNum
+	 * @return
+	 * @throws Throwable
+	 */
+public String getDataFromExcelDoctor(String sheetName , int rowNum , int celNum) throws Throwable {
+		
+		FileInputStream fis = new FileInputStream(".\\testdata\\doctortestScriptdata.xlsx");		
 		Workbook wb =  WorkbookFactory.create(fis);
 	    String data = wb.getSheet(sheetName).getRow(rowNum).getCell(celNum).getStringCellValue();
 	    wb.close();
