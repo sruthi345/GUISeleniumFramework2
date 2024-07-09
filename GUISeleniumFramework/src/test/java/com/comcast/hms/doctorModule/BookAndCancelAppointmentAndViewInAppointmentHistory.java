@@ -52,7 +52,7 @@ public class BookAndCancelAppointmentAndViewInAppointmentHistory extends Patient
 		UtilityClassObject.getTest().log(Status.INFO, "===Booking Appointment===");
 		
 		/* Passing the details in this method to book appointment */
-		bookApp.BookAppointment(doctorSpecialization, doctorName);
+		bookApp.getBookAppointment(doctorSpecialization, doctorName);
 		Reporter.log("Appointment is Booked",true);
 		UtilityClassObject.getTest().log(Status.PASS, "===Appointment added successfully===");
 		
