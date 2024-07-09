@@ -29,8 +29,7 @@ import com.comcast.crm.objectrepositoryutility.PatientRegisterPage;
  * @author Nithish
  * this class consists of add doctor script, editing doctor detalis script 
  * and deleting doctor script
- *hellohhhhhh
- *
+ *jjjj
  */
 @Listeners(com.comcast.crm.generic.listenerutility.ListImpClass.class)
 public class Admin1_Doctor_Test extends AdminBaseClass {
